@@ -43,7 +43,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
     int x = 0;
     int y = 0;
     static Random random = new Random();
-    static String path = "..\\puzzlegame\\image\\";
+    static String path = "..\\NewGame\\image\\";
     static String[] array = {"animal", "girl", "sport"};
     static int R = 0;
     static int r = random.nextInt(8) + 1;
@@ -161,7 +161,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
             // 使用默认设置的路径
             ImagePath = path + resultPath;
             if (victory()) {
-                JLabel winJlable = new JLabel(new ImageIcon("..\\puzzlegame\\image\\win.png"));
+                JLabel winJlable = new JLabel(new ImageIcon("..\\NewGame\\image\\win.png"));
                 winJlable.setBounds(203, 283, 284, 238);
                 this.getContentPane().add(winJlable);
             }
@@ -180,7 +180,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
                 }
             }
             // 背景图片
-            JLabel background = new JLabel(new ImageIcon("..\\puzzlegame\\image\\background.png"));
+            JLabel background = new JLabel(new ImageIcon("..\\NewGame\\image\\background.png"));
             background.setBounds(40, 40, 508, 560);
             this.getContentPane().add(background);
             this.getContentPane().revalidate();
@@ -191,7 +191,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
             this.getContentPane().removeAll();
             // 使用读取到的路径和数据
             if (victory()) {
-                JLabel winJlable = new JLabel(new ImageIcon("..\\puzzlegame\\image\\win.png"));
+                JLabel winJlable = new JLabel(new ImageIcon("..\\NewGame\\image\\win.png"));
                 winJlable.setBounds(203, 283, 284, 238);
                 this.getContentPane().add(winJlable);
             }
@@ -210,7 +210,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
                 }
             }
             // 背景图片
-            JLabel background = new JLabel(new ImageIcon("..\\puzzlegame\\image\\background.png"));
+            JLabel background = new JLabel(new ImageIcon("..\\NewGame\\image\\background.png"));
             background.setBounds(40, 40, 508, 560);
             this.getContentPane().add(background);
             this.getContentPane().revalidate();
@@ -221,7 +221,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
             System.out.println("data != null时" + ImagePath);
             // 如果 imagePath 为 null，但已经加载了有效的 data 数据，继续显示数据而不使用默认路径
             if (victory()) {
-                JLabel winJlable = new JLabel(new ImageIcon("..\\puzzlegame\\image\\win.png"));
+                JLabel winJlable = new JLabel(new ImageIcon("..\\NewGame\\image\\win.png"));
                 winJlable.setBounds(203, 283, 284, 238);
                 this.getContentPane().add(winJlable);
             }
@@ -240,7 +240,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
                 }
             }
             // 背景图片
-            JLabel background = new JLabel(new ImageIcon("..\\puzzlegame\\image\\background.png"));
+            JLabel background = new JLabel(new ImageIcon("..\\NewGame\\image\\background.png"));
             background.setBounds(40, 40, 508, 560);
             this.getContentPane().add(background);
             this.getContentPane().revalidate();
@@ -466,7 +466,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
             //创建弹窗对象
             JDialog jDialog = new JDialog();
             //创建管理图片对象容器
-            JLabel jLabel = new JLabel(new ImageIcon("..\\puzzlegame\\image\\wechat.png"));
+            JLabel jLabel = new JLabel(new ImageIcon("..\\NewGameNewGame\\image\\wechat.png"));
             //设置图片大小
             jLabel.setBounds(0, 0, 450, 500);
             jDialog.getContentPane().add(jLabel);
